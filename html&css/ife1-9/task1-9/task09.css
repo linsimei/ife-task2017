@@ -36,7 +36,6 @@
 
     body {
         width: 100%;
-        min-width: 1280px;
         font: 12px/1.5 "黑体", "Microsoft YaHei";
         color: #333;
     }
@@ -77,6 +76,7 @@
 
     #container {
         width: 100%;
+        min-width: 1280px;
         margin: 0 auto;
     }
 
@@ -510,12 +510,13 @@
     }
 
     .history_search {
-        float: right;
+        float: left;;
         height: 64px;
         width: 140px;
         line-height: 64px;
         background: #fff;
         text-align: center;
+        margin-left: 10px;;
     }
 
     .history_search img {
