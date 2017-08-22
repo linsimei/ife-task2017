@@ -26,7 +26,8 @@
     button,
     span,
     font,
-    a {
+    a,
+    hr {
         margin: 0px;
         padding: 0px;
         border: none;
@@ -501,12 +502,11 @@
         margin-top: 8px;
     }
 
-    .tab_search ul li .price span {
+    .price span {
         font-size: 21px;
         color: #ec6500;
         padding-left: 10px;
         background: url(../images/rmb_icon.png) no-repeat 0 10px;
-        ;
     }
 
     .history_search {
@@ -524,12 +524,12 @@
     /*2016年4月数据统计*/
 
     .data_list ul li {
-        width: 340px;
+        width: 23.7%;
         height: 70px;
         border: 1px solid #d8d9db;
         display: inline-block;
         background: #fff;
-        margin-right: 30px;
+        margin-right: 15px;
     }
 
     .data_list ul li.data_green {
@@ -583,8 +583,11 @@
         background: #e2cd46;
     }
 
+    .project {
+        margin: 10px 0;
+    }
+
     .project_table {
-        margin-top: 10px;
         width: 60%;
         height: 385px;
         border: 1px solid #ced1d4;
@@ -592,7 +595,7 @@
         background: #fff;
     }
 
-   .project_title {
+    .project_title {
         width: 100%;
         height: 40px;
         line-height: 40px;
@@ -607,13 +610,18 @@
     }
 
     .project_table .table_content {
+        width: 100%;
         border: 1px solid #dddddd;
         border-radius: 3px;
         margin-top: -1.5px;
         margin-bottom: 35px;
     }
 
- 
+    .project_table .tab {
+        position: relative;
+        z-index: 1;
+    }
+
     .project_table .tab li {
         display: inline-block;
         width: 80px;
@@ -625,31 +633,244 @@
         border: 1px solid #dddddd;
     }
 
-    .project_table .tab li.project_on {
+    .project_table .tab li.tab_on {
         background: #fff;
         border-width: 1px 1px 0;
         border-color: #dddddd;
         border-style: solid;
     }
-       .project_table .table_content table {
+
+    .project_table .table_content table {
         margin: 28px 46px 35px 35px;
         border-collapse: collapse;
         text-align: center;
     }
+
     .project_table .table_content table td {
-       width: 100px;
-       height: 30px;
+        width: 150px;
+        height: 30px;
     }
-     .project_table .table_content table td.table_on {
-      background: #f4f5f7;
+
+    .project_table .table_content table td.table_on {
+        background: #f4f5f7;
     }
+
     .project_report {
-      min-width:39%;
-       height: 385px;
-       float: none;
-       overflow: hidden;
-      border: 1px solid #ced1d4;
-       border-radius: 10px;
-       background: #fff;
+        min-width: 39%;
+        height: 385px;
+        float: none;
+        overflow: hidden;
+        border: 1px solid #ced1d4;
+        border-radius: 10px;
+        background: #fff;
+        line-height: 1.5;
     }
-    .project_report
+
+    .project_report .report_wrapper {
+        padding: 15px 0 0 38px;
+    }
+
+    .text_gray2 {
+        color: #c3c2c2;
+    }
+
+    text_gray3 {
+        color: #535353;
+        font-family: "微软雅黑";
+        font-weight: 700;
+    }
+
+    .project_report .report_wrapper .line_top {
+        margin-right: 35px;
+        background-color: #dadada;
+    }
+
+    .project_report .report_wrapper .line_right {
+        border-right: 1px solid #dadada;
+        width: 97px;
+        height: 45px;
+    }
+
+    .project_report .report_wrapper .line_bottom {
+        background-color: #dadada;
+    }
+
+    .project_report .price_icon {
+        padding-left: 8px;
+        background: url(../images/project_rmb.png) no-repeat 0 2px;
+        ;
+    }
+
+    .project_report .report_wrapper .project_descrip {
+        border-bottom: 1px solid #dadada;
+        height: 145px;
+        margin-right: 35px;
+        margin-bottom: 10px;
+    }
+
+    .project_report .project_promise input {
+        vertical-align: -2px;
+        width: 15px;
+        height: 15px;
+    }
+
+    .project_report .project_promise .search_btn {
+        float: right;
+        margin-top: -5px;
+        margin-right: 35px;
+    }
+
+    .calendar {
+        width: 30%;
+        height: 450px;
+        background: #fff;
+        border-radius: 10px;
+        color: #535353;
+        border: 1px solid #cacbcb;
+        overflow: hidden;
+    }
+
+    .calendar_menu {
+        margin: 10px 20px;
+        font-weight: 700;
+    }
+
+    .calendar_menu select {
+        width: 105px;
+        height: 25px;
+        border: 1px solid #cacbcb;
+    }
+
+    .calendar_menu .back_today {
+        background: #fff;
+        margin-left: 20px;
+        cursor: pointer;
+    }
+
+    .calendar_date {
+        border-top: 2px solid #a9cfec;
+        width: 90%;
+        text-align: center;
+        margin: 10px auto;
+    }
+
+    .calendar_date table th,
+    .calendar_date table td {
+        width: 60px;
+        height: 45px;
+    }
+
+    .text_red {
+        color: #c9161d;
+    }
+
+    .selected {
+        border: 2px solid #fcecb9;
+    }
+
+    .car {
+        width: 69%;
+        height: 450px;
+        background: #fff;
+        border-radius: 10px;
+        color: #535353;
+        border: 1px solid #cacbcb;
+        overflow: hidden;
+    }
+
+    .car table {
+        border-collapse: collapse;
+        width: 90%;
+        margin: 18px auto;
+        text-align: center;
+    }
+
+    .car table tr {
+        border-bottom: 1px solid #fff;
+    }
+
+    .car table tr th,
+    .car table tr td {
+        border: 1px solid #ddd;
+        height: 30px;
+    }
+
+    .car table tr th:nth-child(1),
+    .car table tr td:nth-child(1) {
+        width: 150px;
+    }
+
+    .car table tr th:nth-child(2),
+    .car table tr td:nth-child(2) {
+        width: 180px;
+    }
+
+    .car table tr.car_current {
+        background: #f4f5f7;
+    }
+
+    .car table tr td div {
+        position: relative;
+        margin-left: 20px;
+        display: inline-block;
+        width: 420px;
+        height: 5px;
+        background: #dcdcdc;
+    }
+
+    .car table tr td div span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: inline-block;
+        height: 5px;
+    }
+
+    .dz {
+        width: 90%;
+        background: #ec6e52;
+    }
+
+    .ft {
+        width: 80%;
+        background: #ef804f;
+    }
+
+    .ad {
+        width: 70%;
+        background: #f19e4f;
+    }
+
+    .bt {
+        width: 65%;
+        background: #7ecaf0;
+    }
+
+    .ft2 {
+        width: 60%;
+        background: #7ecaf0;
+    }
+    .bm {
+        width: 55%;
+        background: #7ecaf0;
+    }
+
+    .xd {
+        width: 50%;
+        background: #7ecaf0;
+    }
+
+    .qy {
+        width: 45%;
+        background: #7ecaf0;
+    }
+    .bc {
+        width: 40%;
+        background: #7ecaf0;
+    }
+
+
+    .bk {
+        width: 35%;
+        background: #7ecaf0;
+    }
